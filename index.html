@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="send-container">
+      <input type="text" placeholder="input file path"  id="file-path-input">
+      <button id="send-button">Send</button>
+      <div><span>This is your ip: </span><div id="ip-address"></div></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="receave-container">
+      <input type="text" name="" id="ip-address-input" placeholder="Sender Ip address">
+      <input type="text" placeholder="Receave folder path" id="receave-filepath-input">
+      <button id="receave-button">Receave</button>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
